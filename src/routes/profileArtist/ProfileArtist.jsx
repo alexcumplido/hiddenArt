@@ -1,3 +1,6 @@
+import { useParams } from "react-router-dom";
+
 export function ProfileArtist() {
-  return <h1>Profile Artist</h1>;
+  const { id } = useParams();
+  return <h1>This is the profile of Artist {id}</h1>;
 }

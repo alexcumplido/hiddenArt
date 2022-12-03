@@ -6,6 +6,7 @@ import { Home } from "./routes/home/Home";
 import { Experience } from "./routes/experience/Experience";
 import { ProfileUser } from "./routes/profileUser/ProfileUser";
 import { ProfileArtist } from "./routes/profileArtist/ProfileArtist";
+import { Area } from "./routes/area/Area";
 
 const App = () => {
   return (
@@ -13,8 +14,9 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="profileUser" element={<ProfileUser />} />
-          <Route path="profileArtist" element={<ProfileArtist />} />
-          <Route path="experiences/id" element={<Experience />} />
+          <Route path="profileArtist/:id" element={<ProfileArtist />} />
+          <Route path="experience/:id" element={<Experience />} />
+          <Route path="area/:id" element={<Area />} />
           <Route path="/" element={<Home />} />
         </Routes>
       </BrowserRouter>
