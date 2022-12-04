@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useRef, useEffect, useState } from "react";
 import mapboxgl from "mapbox-gl"; // eslint-disable-line import/no-webpack-loader-syntax
-import Map, { Popup } from "react-map-gl";
+// import geoJson from "./barcelonPointers.json";
 
 mapboxgl.accessToken =
   "pk.eyJ1IjoiYWxleGN1Ym91IiwiYSI6ImNsYjk4YjNkczA2NWszeG9mZHZrYjJxM2kifQ.mrgVxfpPjE8S1zjo1rvfzA";
@@ -23,31 +23,20 @@ export function Home() {
     });
   });
 
-  useEffect(() => {
-    if (!map.current) return; // wait for map to initialize
-    map.current.on("move", () => {
-      setLng(map.current.getCenter().lng.toFixed(4));
-      setLat(map.current.getCenter().lat.toFixed(4));
-      setZoom(map.current.getZoom().toFixed(2));
-    });
-  });
   return (
     <>
-      <Link className="link nav__link" to={`/area/${0}`}>
-        Zero
-      </Link>
-      <p></p>
-      <Link className="link nav__link" to={`/area/${1}`}>
-        One
-      </Link>
-      <p></p>
-      <Link className="link nav__link" to={`/area/${2}`}>
-        Two
-      </Link>
+      <section className="hero">
+        <Link className="link hero__link flex-center" to={`/area/${0}`}>
+          Ciutadella
+        </Link>
+        <Link className="link hero__link flex-center" to={`/area/${1}`}>
+          Gòtic
+        </Link>
+        <Link className="link hero__link flex-center" to={`/area/${2}`}>
+          Soon
+        </Link>
+      </section>
       <div>
-        <div className="sidebar">
-          Longitude: {lng} | Latitude: {lat} | Zoom: {zoom}
-        </div>
         <div ref={mapContainer} className="map-container" />
       </div>
     </>
