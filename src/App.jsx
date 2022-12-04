@@ -7,6 +7,7 @@ import { Experience } from "./routes/experience/Experience";
 import { ProfileUser } from "./routes/profileUser/ProfileUser";
 import { ProfileArtist } from "./routes/profileArtist/ProfileArtist";
 import { Area } from "./routes/area/Area";
+import "mapbox-gl/dist/mapbox-gl.css";
 
 const App = () => {
   return (
