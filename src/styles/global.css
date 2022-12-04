@@ -64,6 +64,6 @@ ul {
   list-style-type: none;
 }
 
-#map {
-  height: 180px;
+.map-container {
+  height: 400px;
 }
