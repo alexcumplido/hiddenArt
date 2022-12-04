@@ -1,5 +1,5 @@
 import { useParams } from "react-router-dom";
-import { experiences } from "../../data/data";
+import { experiences } from "../../data/experiences";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 export function Experience() {
@@ -16,6 +16,9 @@ export function Experience() {
 
   return (
     <>
+      <Link to={`/`} className="link nav__link">
+        <h2>Home</h2>
+      </Link>
       {experience ? (
         <>
           <h1>{experience.type}</h1>{" "}

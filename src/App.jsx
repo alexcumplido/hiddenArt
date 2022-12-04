@@ -14,8 +14,8 @@ const App = () => {
       <BrowserRouter>
         <Routes>
           <Route path="profileUser" element={<ProfileUser />} />
-          <Route path="profileArtist/:id" element={<ProfileArtist />} />
           <Route path="experience/:id" element={<Experience />} />
+          <Route path="profileArtist/:id" element={<ProfileArtist />} />
           <Route path="area/:id" element={<Area />} />
           <Route path="/" element={<Home />} />
         </Routes>
