@@ -57,12 +57,3 @@
   font-size: var(--fs-200);
   font-weight: var(--fw-bold);
 }
-
-.social {
-  margin: 0.5rem;
-  max-width: 3rem;
-}
-
-.social:hover {
-  cursor: pointer;
-}

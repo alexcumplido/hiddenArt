@@ -2,3 +2,7 @@
 @import url("./reset.css");
 @import url("./global.css");
 @import url("./utilities.css");
+@import url("../routes/home/home.css");
+@import url("../routes/area/area.css");
+@import url("../routes/profileArtist/profileArtist.css");
+@import url("../routes/profileArtist/modal.css");
