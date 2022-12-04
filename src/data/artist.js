@@ -1,7 +1,7 @@
 export const artist = [
   {
     id: "1",
-    name: "Artist One",
+    name: "Pedro Benavides",
     description:
       "Pedro Benavides es un chileno, bailarín profesional de break dance, que empezó hace unos 8 años a hacer shows en la calle con su rueda de acero. Le puedes conocer para que comparta contigo su larga experiencia en las calles del centro de Barcelona, y sus técnicas para dominar el cuerpo y encontrar el equilibrio perfecto.",
     social: [
@@ -12,7 +12,7 @@ export const artist = [
   },
   {
     id: "2",
-    name: "Artist two",
+    name: "Felix Benavides",
     description:
       "Pedro Benavides es un chileno, bailarín profesional de break dance, que empezó hace unos 8 años a hacer shows en la calle con su rueda de acero. Le puedes conocer para que comparta contigo su larga experiencia en las calles del centro de Barcelona, y sus técnicas para dominar el cuerpo y encontrar el equilibrio perfecto.",
     social: [
@@ -23,7 +23,7 @@ export const artist = [
   },
   {
     id: "3",
-    name: "Artist three",
+    name: "Eleonora Benavides",
     description:
       "Pedro Benavides es un chileno, bailarín profesional de break dance, que empezó hace unos 8 años a hacer shows en la calle con su rueda de acero. Le puedes conocer para que comparta contigo su larga experiencia en las calles del centro de Barcelona, y sus técnicas para dominar el cuerpo y encontrar el equilibrio perfecto.",
     social: [
