@@ -10,9 +10,7 @@ export function Area() {
           <h2>Home</h2>
         </Link>
       </section>
-      <section className="hero">
-        <h1 className="link hero__link flex-center">This is Area {id}</h1>
-      </section>
+
       <div className="container-standard components-wrapper">
         {area[id].experiences.map(function (element) {
           return (

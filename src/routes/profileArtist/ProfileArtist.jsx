@@ -37,9 +37,7 @@ export function ProfileArtist() {
           </Link>
         </section>
         <section className="hero">
-          <h1 className="link hero__link flex-center">
-            This is the profile of {profileArtist.name}
-          </h1>
+          <h1 className="link hero__link flex-center">{profileArtist.name}</h1>
         </section>
         <ul className="flex-center">
           {profileArtist.social.length ? (
